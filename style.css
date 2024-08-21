@@ -178,7 +178,7 @@ span {
     background-image: url("img-1.jpg");
     background-size: cover;
     background-position: center; 
-    height: 600px;
+    min-height: 600px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 620px;
@@ -419,7 +419,7 @@ ul p {
 }
 
 table {
-    width: 100%;
+    width: 72%;
     max-width: 1200px;
     border-collapse: collapse;
     table-layout: fixed; 
@@ -429,6 +429,7 @@ table {
 .panel-column {
     padding: 10px 15px;
     text-align: left;
+    margin-right: 20px;
 }
 
 .panel-column p {
@@ -452,8 +453,21 @@ table {
     display: table-row;
 }
 
+.row1 .add {
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+.row3 .add1 {
+    padding-top: 0px;
+}
+
+.row4 .add2 {
+    padding-top: 0px;
+}
+
 td {
-    width: 14.2857%;
+    width: 15%;
 }
 
 table tr {
