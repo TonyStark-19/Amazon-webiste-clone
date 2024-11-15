@@ -1,7 +1,7 @@
 * {
-   margin: 0;
-   font-family: Arial;
-   border: border-box;
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
 }
 
 html {
@@ -28,7 +28,7 @@ body {
 
 .logo {
     background-image: url("amazon-logo/amazon-logo.jpg");
-    background-size:cover;
+    background-size: cover;
     height: 50px;
     width: 100%;
 }
@@ -177,7 +177,7 @@ span {
     position: relative;
     background-image: url("Hero-image/img-1.jpg");
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     min-height: 600px;
     margin-left: 10px;
     margin-right: 10px;
@@ -201,12 +201,12 @@ span {
 
 .hero-message a:hover {
     color: rgba(255, 68, 0, 0.816);
-    text-decoration : underline;
+    text-decoration: underline;
 }
 
 .hero-message a {
     color: #007185;
-    text-decoration : none;
+    text-decoration: none;
 }
 
 /** Shop section **/
@@ -309,7 +309,7 @@ span {
 
 .hr1 {
     width: 100%;
-    margin-top: 40px; 
+    margin-top: 40px;
 }
 
 .hr2 {
@@ -397,8 +397,8 @@ ul p {
 }
 
 .copyright {
-   text-align: center;
-   margin-top: 5px;
+    text-align: center;
+    margin-top: 5px;
 }
 
 .pages a {
@@ -422,7 +422,7 @@ table {
     width: 72%;
     max-width: 1200px;
     border-collapse: collapse;
-    table-layout: fixed; 
+    table-layout: fixed;
     margin-left: 80px;
 }
 
@@ -445,11 +445,15 @@ table {
     font-size: 12px;
 }
 
-.panel-column:hover p , .panel-column:hover a {
+.panel-column:hover p,
+.panel-column:hover a {
     text-decoration: underline;
 }
 
-.row1, .row2, .row3, .row4 {
+.row1,
+.row2,
+.row3,
+.row4 {
     display: table-row;
 }
 
@@ -478,9 +482,10 @@ table tr {
 
 @media (max-width: 768px) {
     .nav-search {
-       width: 100%;
+        width: 100%;
     }
+
     .box {
-       width: 100%;
+        width: 100%;
     }
- }
+}

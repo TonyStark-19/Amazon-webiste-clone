@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     display: flex;
@@ -87,7 +88,7 @@ html, body {
 .sigin-box .input input[type="text"]:focus {
     outline: none;
     border: 1px solid #007185;
-    box-shadow: 0 0 8px 2px rgba(200,243,250,255);
+    box-shadow: 0 0 8px 2px rgba(200, 243, 250, 255);
 }
 
 .sigin-box .input input[type="submit"] {

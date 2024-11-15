@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     display: flex;
@@ -69,7 +70,7 @@ html, body {
 .sigin-box .input input[type="text"]:focus {
     outline: none;
     border: 1px solid #007185;
-    box-shadow: 0 0 8px 2px rgba(200,243,250,255);
+    box-shadow: 0 0 8px 2px rgba(200, 243, 250, 255);
 }
 
 .sigin-box .input input[type="submit"] {
@@ -139,7 +140,7 @@ html, body {
     width: 100%;
     margin-top: 30px;
 }
-  
+
 .line {
     flex-grow: 1;
     height: 1px;
@@ -147,7 +148,7 @@ html, body {
     margin: 0 0 14px;
     padding: 1px 0 0;
 }
-  
+
 .legend {
     font-size: 13px;
     padding: 0 8px 0 7px;
@@ -178,7 +179,7 @@ html, body {
 .create a:focus {
     outline: none;
     border: 1px solid #007185;
-    box-shadow: 0 0 8px 2px rgba(200,243,250,255);
+    box-shadow: 0 0 8px 2px rgba(200, 243, 250, 255);
 }
 
 .create:hover {
