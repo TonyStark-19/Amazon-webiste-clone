@@ -1,7 +1,8 @@
 * {
     margin: 0;
     font-family: Arial;
-    border: border-box;
+    box-sizing: border-box;
+    font: 1em sans-serif;
 }
 
 html {
@@ -12,6 +13,8 @@ body {
     background-color: #e3e6e6;
 }
 
+/* navbar */
+
 .navbar {
     height: 60px;
     background-color: #231f20;
@@ -21,17 +24,22 @@ body {
     justify-content: space-evenly;
 }
 
+/* logo */
+
 .nav-logo {
     height: 50px;
-    width: 100px;
+    width: 110px;
+    overflow: hidden;
 }
 
 .logo {
-    background-image: url("amazon-logo/amazon-logo.jpg");
+    background-image: url("/images/amazon-logo/amazon-logo.jpg");
     background-size: cover;
-    height: 50px;
+    height: 100%;
     width: 100%;
 }
+
+/* border class */
 
 .border {
     border: 2px solid transparent;
@@ -40,6 +48,8 @@ body {
 .border:hover {
     border: 2px solid white;
 }
+
+/* address */
 
 .add-first {
     color: #CCCCCC;
@@ -58,54 +68,68 @@ body {
     align-items: center;
 }
 
-/** BOX 3 **/
+/** search bar **/
 
 .nav-search {
     display: flex;
     justify-content: space-evenly;
-    background-color: #febd68;
     width: 900px;
     height: 40px;
     border-radius: 4px;
+    border: 2px solid transparent;
 }
 
-.nav-address {
-    padding: 8px;
-}
+/*  padding for boxes */
 
-.nav-signin {
-    padding: 8px;
-}
-
-.nav-return {
-    padding: 8px;
-}
-
+.nav-address,
+.nav-signin,
+.nav-return,
 .nav-cart {
     padding: 8px;
 }
 
-.panel-all {
-    padding: 7px;
-}
-
+.panel-all,
 .panel-ops p {
     padding: 7px;
 }
 
-.search-select {
-    background-color: #FFFFFF;
-    width: 50px;
-    text-align: center;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+/* search bar */
+
+.select-wrap {
+    width: 60px;
+    background: #e6e6e6;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.select-search {
+    font-size: 14px;
+    background: transparent;
+    height: 100%;
+    width: 100%;
     border: none;
+    outline: none;
+    appearance: none;
+    color: #666666;
+}
+
+.select-wrap i {
+    color: #666666;
+    font-size: 12px;
+    margin-left: -10px;
 }
 
 .search-input {
     width: 100%;
     font-size: 1rem;
     border: none;
+    outline: none;
+    padding-left: 10px;
 }
 
 .search-icon {
@@ -114,9 +138,10 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
     color: #0f1111;
+    background: #ffc32b;
 }
 
 .nav-search:hover {
@@ -175,7 +200,7 @@ span {
 
 .hero-section {
     position: relative;
-    background-image: url("Hero-image/img-1.jpg");
+    background-image: url("/images/Hero-image/img-1.jpg");
     background-size: cover;
     background-position: center;
     min-height: 600px;
@@ -255,7 +280,7 @@ span {
     background-repeat: no-repeat;
 }
 
-/** Signin **/
+/** Sign-in **/
 
 .container {
     display: flex;
@@ -263,7 +288,8 @@ span {
     justify-content: center;
     flex-direction: column;
     background: #fff;
-    padding: 0 20px;
+    padding: 0px 20px;
+    width: 100%;
 }
 
 .sign-in {
@@ -272,8 +298,9 @@ span {
 }
 
 .sign-in .p1 {
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
 }
 
 .sign-in .p2 {
@@ -281,18 +308,17 @@ span {
 }
 
 .sign-in input {
-    font-size: 12px;
+    font-size: 13px;
     height: 28px;
     width: 230px;
     margin-top: 5px;
     margin-bottom: 5px;
-    background-color: #ffc32b;
-    border: 1px solid #e6a700;
+    background-color: #ffd814;
+    border: 1px solid #ffd814;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 5px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .sign-in a {
@@ -316,7 +342,6 @@ span {
     width: 100%;
     margin-bottom: 20px;
 }
-
 
 /** Footer */
 
@@ -378,7 +403,7 @@ ul p {
 }
 
 .logo2 {
-    background-image: url("amazon-logo/logo.jpg");
+    background-image: url("/images/amazon-logo/logo.jpg");
     background-size: cover;
     height: 50px;
     width: 100px;
@@ -387,7 +412,7 @@ ul p {
 .foot-panel4 {
     background-color: #131a22;
     color: white;
-    height: 70px;
+    height: 90px;
     padding-top: 25px;
     font-size: 12px;
 }
@@ -476,16 +501,4 @@ td {
 
 table tr {
     margin-bottom: 20px;
-}
-
-/* Responsive */
-
-@media (max-width: 768px) {
-    .nav-search {
-        width: 100%;
-    }
-
-    .box {
-        width: 100%;
-    }
 }
