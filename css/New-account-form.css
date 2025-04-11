@@ -2,25 +2,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font: 1em sans-serif;
 }
 
-html,
 body {
     height: 100%;
     width: 100%;
+    padding: 14px 18px;
+    margin: 0 0 22px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
+
+/* container */
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
+/* logo */
+
 .logo {
+    margin-top: -20px;
     height: 60px;
-    width: 130px;
+    width: 135px;
 }
 
 .logo img {
@@ -29,23 +38,28 @@ body {
     width: 100%;
 }
 
+/* sigin-box */
+
 .sigin-box {
     display: flex;
     flex-direction: column;
     max-width: 350px;
     width: 100%;
     padding: 20px 20px;
-    border: 1px solid #efefef;
+    border: 2px solid #efefef;
     border-radius: 10px;
     background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* title */
+
 .sigin-box .title {
-    font-size: 30px;
-    margin: 0 0 10px;
+    font-size: 28px;
+    margin: 0 0 8px;
     padding: 0 0 4px;
 }
+
+/* input */
 
 .input {
     display: flex;
@@ -56,26 +70,36 @@ body {
     font-size: 14px;
     font-weight: 600;
     padding: 0 0 2px 2px;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 .box2 {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 
 .box2 p {
     margin-top: 10px;
 }
 
+/* password */
+
 .sigin-box .input .password {
     font-size: 12px;
     margin-bottom: 14px;
+    margin-top: 5px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 
 .sigin-box .input .password i {
-    color: #0066c0;
-    margin-right: 5px;
+    color: #1196ab;
+    margin-right: 10px;
+    font-size: 18px;
 }
+
+/* input */
 
 .sigin-box .input input[type="text"] {
     padding: 3px 7px;
@@ -83,6 +107,10 @@ body {
     margin-bottom: 6px;
     border: 2px solid #c9c9c9;
     border-radius: 5px;
+}
+
+.sigin-box .input input[type="text"]::placeholder {
+    font-size: 14px;
 }
 
 .sigin-box .input input[type="text"]:focus {
@@ -99,25 +127,37 @@ body {
     height: 29px;
     background: #ffd814;
     border: none;
+    font-size: 13px;
+    font-weight: 500;
 }
 
 .sigin-box .input input[type="submit"]:hover {
     background: #e7c622;
 }
 
+/* text */
+
+.text {
+    border-bottom: 1px solid #eaecec;
+}
+
 .text p {
-    font-size: 13px;
-    margin: 18px 0 0;
-    margin-bottom: 22px;
+    font-size: 12px;
+    margin: 30px 0;
 }
 
 .text p a {
     color: #0066c0;
-    letter-spacing: 1px;
 }
 
 .text p a:hover {
     color: rgba(255, 68, 0, 0.956);
+}
+
+/* business text */
+
+.business {
+    border-bottom: 2px solid #eaecec;
 }
 
 .business h4 {
@@ -127,7 +167,7 @@ body {
 }
 
 .business p {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .business p a {
@@ -141,10 +181,11 @@ body {
     text-decoration: underline;
 }
 
+/* link */
+
 .link p {
     font-size: 14px;
     margin-top: 20px;
-    margin-bottom: 5px;
 }
 
 .link p a {
@@ -152,33 +193,39 @@ body {
     text-decoration: none;
 }
 
+.link a i {
+    font-size: 6px;
+}
+
 .link p a:hover {
     color: rgba(255, 68, 0, 0.956);
     text-decoration: underline;
 }
 
-.hr1 {
-    width: 100%;
-    margin-top: 30px;
-}
+/* footer */
 
-.footer1 {
-    padding-bottom: 35px;
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
     display: flex;
     flex-direction: row;
     margin: 0 0 10px;
-    margin-top: 40px;
+    padding-top: 40px;
+    gap: 20px;
     justify-content: center;
+    width: 100%;
+    border-top: 2px solid #d5d9d9;
+    margin-top: 30px;
 }
 
 .footer a {
-    font-size: 11px;
+    font-size: 12px;
     color: #0066c0;
-    letter-spacing: 1px;
-    margin-right: 20px;
     text-decoration: none;
 }
 
@@ -188,8 +235,17 @@ body {
 }
 
 .copyright {
-    font-size: 11px;
-    margin-top: 7px;
+    font-size: 12px;
+    margin-top: 2px;
     font-weight: 500;
-    letter-spacing: 1px;
+    color: #565959;
+}
+
+/* responsiveness */
+
+@media (max-width: 400px) {
+
+    .sigin-box {
+        width: 300px;
+    }
 }

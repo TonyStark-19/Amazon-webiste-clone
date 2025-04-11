@@ -2,25 +2,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font: 1em sans-serif;
 }
 
-html,
 body {
     height: 100%;
     width: 100%;
+    padding: 14px 18px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
+
+/* container */
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
+/* logo */
+
 .logo {
+    margin-top: -20px;
     height: 60px;
-    width: 130px;
+    width: 135px;
 }
 
 .logo img {
@@ -29,23 +37,28 @@ body {
     width: 100%;
 }
 
+/* sign-in box */
+
 .sigin-box {
     display: flex;
     flex-direction: column;
     max-width: 350px;
     width: 100%;
     padding: 20px 26px;
-    border: 1px solid #efefef;
+    border: 2px solid #e7e9e9;
     border-radius: 10px;
     background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* title */
 
 .sigin-box .title {
     font-size: 28px;
     margin: 0 0 10px;
     padding: 0 0 4px;
 }
+
+/* input */
 
 .input {
     display: flex;
@@ -56,7 +69,6 @@ body {
     font-size: 14px;
     font-weight: 600;
     padding: 0 0 2px 2px;
-    margin-bottom: 4px;
 }
 
 .sigin-box .input input[type="text"] {
@@ -75,31 +87,40 @@ body {
 
 .sigin-box .input input[type="submit"] {
     padding: 1px 6px;
-    margin-top: 10px;
-    border-radius: 8px;
+    margin-top: 6px;
+    border-radius: 15px;
     cursor: pointer;
     height: 29px;
     background: #ffd814;
     border: none;
+    font-size: 13px;
+    font-weight: 500;
 }
 
 .sigin-box .input input[type="submit"]:hover {
     background: #e7c622;
 }
 
+/* text */
+
 .text p {
-    font-size: 13px;
+    font-size: 12px;
     margin: 18px 0 0;
     margin-bottom: 22px;
 }
 
 .text p a {
     color: #0066c0;
-    letter-spacing: 1px;
 }
 
 .text p a:hover {
     color: rgba(255, 68, 0, 0.956);
+}
+
+/* help text */
+
+.help {
+    border-bottom: 1px solid #eaecec;
 }
 
 .help li {
@@ -117,10 +138,13 @@ body {
     text-decoration: underline;
 }
 
+/* business text */
+
 .business h4 {
     font-size: 14px;
     margin: 0 0 4px;
     margin-top: 20px;
+    font-weight: 600;
 }
 
 .business p a {
@@ -134,11 +158,18 @@ body {
     text-decoration: underline;
 }
 
+/* more links */
+
+.more-links {
+    max-width: 350px;
+    width: 100%;
+}
+
 .line-container {
     display: flex;
     align-items: center;
-    width: 100%;
     margin-top: 30px;
+    width: 100%;
 }
 
 .line {
@@ -150,26 +181,26 @@ body {
 }
 
 .legend {
-    font-size: 13px;
+    font-size: 12px;
     padding: 0 8px 0 7px;
     color: #767676;
     margin-bottom: 14px;
 }
 
+/* create button */
+
 .create-link {
     display: inline-block;
     text-decoration: none;
-    width: 100%;
 }
 
 .create {
-    max-width: 350px;
-    width: 100%;
+    width: 350px;
     padding: 0 10px 0 11px;
     font-size: 13px;
     height: 29px;
-    border-radius: 8px;
-    border: 1px solid #d9dddd;
+    border-radius: 15px;
+    border: 2px solid #cacccc;
     background: #ffffff;
     margin-bottom: 30px;
     text-align: center;
@@ -186,23 +217,29 @@ body {
     background: #f5f5f5;
 }
 
-.hr1 {
-    width: 100%;
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
     display: flex;
     flex-direction: row;
     margin: 0 0 10px;
-    margin-top: 40px;
+    padding-top: 40px;
+    gap: 20px;
     justify-content: center;
+    width: 100%;
+    border-top: 2px solid #d5d9d9;
 }
 
 .footer a {
-    font-size: 11px;
+    font-size: 12px;
     color: #0066c0;
-    letter-spacing: 1px;
-    margin-right: 20px;
     text-decoration: none;
 }
 
@@ -212,8 +249,19 @@ body {
 }
 
 .copyright {
-    font-size: 11px;
-    margin-top: 7px;
+    font-size: 12px;
+    margin-top: 2px;
     font-weight: 500;
-    letter-spacing: 1px;
+    color: #565959;
+}
+
+/* responsiveness */
+
+@media (max-width: 390px) {
+
+    .sigin-box,
+    .more-links,
+    .create {
+        width: 300px;
+    }
 }
