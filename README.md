@@ -11,6 +11,12 @@ This project is a **clone of the Amazon homepage**, built using **HTML** and **C
 
 ---
 
+## 🌐 Live Demo  
+
+The project is live and can be viewed here: [Amazon-Clone](https://clone-project-dun.vercel.app/)  
+
+---
+
 ## 🌟 Project Overview
 
 ### 🛠️ Technologies Used
