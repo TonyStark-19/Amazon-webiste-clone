@@ -27,12 +27,14 @@ The project is live and can be viewed here: [Amazon-Clone](https://clone-project
 ---
 
 ### ✨ Features
+- 📱 **Fully responsive** design for mobile, tablet, and desktop devices.
 - 🎯 Responsive header with **logo**, **search bar**, **account options**, and **cart icon**.
 - 🖼️ Hero section with **localized content** and **banner message**.
 - 📦 Product listing section with **clickable boxes** and **images**.
 - 📝 Footer with **multi-column links** similar to Amazon's extensive footer.
 
 ---
+
 
 ## 🚀 How to Run the Project
 1. Clone the repository:
