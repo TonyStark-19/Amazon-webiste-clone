@@ -39,7 +39,7 @@ The project is live and can be viewed here: [Amazon-Clone](https://clone-project
 ## 🚀 How to Run the Project
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/amazon-clone.git
+   git clone https://github.com/TonyStark-19/amazon-clone.git
    ```
 2. Navigate to the project folder:
    ```bash
