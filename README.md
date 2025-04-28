@@ -38,14 +38,16 @@ The project is live and can be viewed here: [Amazon-Clone](https://clone-project
 
 ## 🚀 How to Run the Project
 1. Clone the repository:
+   
    ```bash
    git clone https://github.com/TonyStark-19/amazon-clone.git
    ```
-2. Navigate to the project folder:
+3. Navigate to the project folder:
+   
    ```bash
    cd amazon-clone
    ```
-3. Open the `index.html` file in your browser.
+5. Open the `index.html` file in your browser.
 
 ---
 
