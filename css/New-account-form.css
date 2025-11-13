@@ -246,6 +246,6 @@ footer {
 @media (max-width: 400px) {
 
     .sigin-box {
-        width: 300px;
+        width: 100%;
     }
 }

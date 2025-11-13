@@ -791,7 +791,7 @@ table tr {
     /* hero section */
 
     .hero-section {
-        margin-bottom: 2800px;
+        margin-bottom: 2900px;
     }
 
     .shop-section {
@@ -801,9 +801,9 @@ table tr {
     /* boxes */
 
     .box {
-        width: 350px;
+        width: 100%;
         min-height: 350px;
-        margin-bottom: 0;
+        margin-bottom: 20px;
     }
 
     .box-img {

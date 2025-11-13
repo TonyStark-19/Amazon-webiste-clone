@@ -259,9 +259,12 @@ footer {
 
 @media (max-width: 390px) {
 
-    .sigin-box,
     .more-links,
     .create {
         width: 300px;
+    }
+
+    .sigin-box {
+        width: 100%;
     }
 }
