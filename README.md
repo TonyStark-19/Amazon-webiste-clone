@@ -9,17 +9,15 @@ This project showcases attention to detail, responsive design skills, and creati
 
 ## 📸 Screenshots
 
-| Preview 1 | Preview 2 |
+| 🏠 Home Section | 🧩 Footer Section |
 |------------|------------|
 | ![Screenshot 1](images/Screenshot/image1.png) | ![Screenshot 2](images/Screenshot/image2.png) |
 
-| Preview 3 | Preview 4 |
+| 🔐 Sign In Page | 🆕 Create New Account Page  |
 |------------|------------|
 | ![Screenshot 3](images/Screenshot/image3.png) | ![Screenshot 4](images/Screenshot/image4.png) |
 
 ---
-
-## 🌟 Project Overview
 
 ### 🧱 Technologies Used
 - 🖥️ **HTML5** – For structuring the website.  
